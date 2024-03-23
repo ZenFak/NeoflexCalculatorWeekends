@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результат</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <main>
+        <h1 th:text="'Ваши отпускные составят: ' + ${result}"></h1>
+    </main>
+
+    <div th:replace="footer :: content"></div>
+</div>
+</body>
+</html>
