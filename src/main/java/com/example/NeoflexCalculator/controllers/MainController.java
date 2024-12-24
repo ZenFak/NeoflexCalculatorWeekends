@@ -28,20 +28,12 @@ public class MainController {
         return "index";
     }
 
+
     @GetMapping("/calculate")
     public String findSalary(@RequestParam String salary,
                              @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date dateStart,
                              @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date dateEnd,
                              Model model) {
-        /*double holidayMoney;    //Отпускные
-        try{
-            holidayMoney = Double.parseDouble(salary) * 12 / 365.0 * Double.parseDouble(days);
-        }
-        catch (Exception e){
-             return "error-data-type";
-        }
-        model.addAttribute("result", round(holidayMoney, 2));
-        return "result";*/
 
 
         //Общее кол-во выбранных дней
