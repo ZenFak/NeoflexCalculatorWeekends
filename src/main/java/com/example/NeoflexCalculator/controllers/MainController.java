@@ -34,7 +34,6 @@ public class MainController {
                              @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date dateEnd,
                              Model model) {
 
-
         //Общее кол-во выбранных дней
         long totalDays = ChronoUnit.DAYS.between(dateStart.toInstant(), dateEnd.toInstant()) + 1;
         double sal;     //Средняя зарплата за месяц
