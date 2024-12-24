@@ -28,6 +28,7 @@ public class MainController {
         return "index";
     }
 
+
     @GetMapping("/calculate")
     public String findSalary(@RequestParam String salary,
                              @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date dateStart,
