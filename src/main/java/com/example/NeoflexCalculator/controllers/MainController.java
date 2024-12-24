@@ -38,7 +38,7 @@ public class MainController {
             holidayMoney = Double.parseDouble(salary) * 12 / 365.0 * Double.parseDouble(days);
         }
         catch (Exception e){
-            return "error-data-type";
+             return "error-data-type";
         }
         model.addAttribute("result", round(holidayMoney, 2));
         return "result";*/
