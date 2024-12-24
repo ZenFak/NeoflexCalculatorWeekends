@@ -32,6 +32,8 @@ public class MainController {
         return "index";
     }
 
+    //Aboba
+
     @GetMapping("/calculate")
     public String findSalary(@RequestParam String salary,
                              @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") Date dateStart,
