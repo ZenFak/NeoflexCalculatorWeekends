@@ -43,6 +43,7 @@ public class MainController {
         model.addAttribute("result", round(holidayMoney, 2));
         return "result";*/
 
+
         //Общее кол-во выбранных дней
         long totalDays = ChronoUnit.DAYS.between(dateStart.toInstant(), dateEnd.toInstant()) + 1;
         double sal;     //Средняя зарплата за месяц
